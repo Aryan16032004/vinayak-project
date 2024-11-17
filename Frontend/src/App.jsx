@@ -1,6 +1,6 @@
 import Header from "./components/common/header/Header";
 import { Routes, Route } from "react-router-dom";
-import About from "./components/about/About";
+import About from "./components/about/About.jsx";
 import CourseHome from "./components/allcourses/CourseHome";
 import Team from "./components/team/Team";
 import Pricing from "./components/pricing/Pricing";

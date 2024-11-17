@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const Header = () => {
   const [click, setClick] = useState(false)
@@ -10,7 +12,7 @@ const Header = () => {
     <>
       <Head />
       <header>
-        <nav className='flexSB '>
+        <nav className='flexSB  bg-teal-400'>
           <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
             <li>
               <Link to='/'>Home</Link>
@@ -38,7 +40,7 @@ const Header = () => {
             <div className='button'>GET CERTIFICATE</div>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
+            {click ? <IoMdClose /> :<GiHamburgerMenu />}
           </button>
         </nav>
       </header>

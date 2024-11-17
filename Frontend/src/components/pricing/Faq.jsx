@@ -13,8 +13,8 @@ const Faq = () => {
   }
 
   return (
-    <>
-      <Heading subtitle='FAQS' title='Frequesntly Ask Question' />
+    <div className="text-teal-400">
+      <Heading className="" subtitle='FAQS' title='Frequesntly Ask Question' />
       <section className='faq'>
         <div className='container'>
           {faq.map((val, index) => (
@@ -32,7 +32,7 @@ const Faq = () => {
           ))}
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
